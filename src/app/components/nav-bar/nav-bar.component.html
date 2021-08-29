@@ -1,0 +1,8 @@
+<div class="navBar_cont">
+  <div class="navBar_cont2">
+    <div class="navBar_cont3">
+      <div class="link" *ngFor="let link of linksNavBar"><a routerLink="{{link.path}}" routerLinkActive="activeLink"><span>{{link.title}}</span></a></div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
