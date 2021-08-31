@@ -1,0 +1,21 @@
+<div class="hamMenu_cont" [class]="isActive ? 'activeMenu' : ''">
+  <div class="hamMenu_cont2">
+    <div class="hamMenu_cont3">
+      <div class="headerMenu">
+        <button class="hamMenuClose" (click)="closeMenu()"><mat-icon>close</mat-icon></button>
+      </div>
+      <div class="contentLinks">
+        <div class="cl_continer2">
+          <div class="cl_continer3">
+            <div class="link" *ngFor="let link of linksHamMenu"><a routerLink="{{link.path}}" routerLinkActive="activeLink"><span>{{link.title}}</span></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- colo button #3f51b5 -->
+<button class="hamMenuOpen" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon"
+  (click)="openMenu()">
+          <mat-icon>menu</mat-icon>
+</button>

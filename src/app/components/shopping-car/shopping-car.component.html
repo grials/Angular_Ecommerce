@@ -1,0 +1,38 @@
+<div class="shoppingCar" [class]= "isActive ? 'activeShoppingCart' :''">
+  <div class="sc_cont">
+    <div class="sc_cont2">
+      <div class="header">
+        <div class="h_cont">
+          <div class="h_cont2">
+            <div class="closeMenu" (click)="closeMenu()">
+              <mat-icon>arrow_forward_ios</mat-icon>
+            </div>
+            <h1>{{language?.header?.title}}</h1>
+          </div>
+        </div>
+      </div>
+      <div class="contentCar">
+        <div class="cc_cont">
+          <div class="cc_cont2">
+
+          </div>
+        </div>
+      </div>
+      <div class="total">
+        <div class="t_cont">
+          <div class="t_cont2">
+            <h2>{{language?.subTotal?.title}}</h2>
+            <h3>{{""}}250$</h3>
+          </div>
+        </div>
+      </div>
+      <div class="redirect">
+        <a routerLink="/shopping">{{language?.buttonTitle}}</a>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+<button class="btnChoppingCar" mat-icon-button color="primary" aria-label="Example icon button with a home icon" (click) = "openMenu()">
+  <mat-icon>shopping_cart</mat-icon>
+</button>

@@ -4,6 +4,7 @@ import {
   IHomeObject,
 } from 'src/app/interfaces/Objects/home.state.interface';
 import { IResize } from 'src/app/interfaces/Objects/resize.state.interface';
+import { ILanguageShopping } from 'src/app/interfaces/Objects/shoppingCart.interface';
 import { initialObject } from '../objects';
 import mainReducers from '../reducers';
 
@@ -24,5 +25,9 @@ export class MyStore {
 
   public static getResizeApp(): IResize {
     return MyStore.mainStore.getState().resizeApp;
+  }
+
+  public static getShoppingCart(): ILanguageShopping {
+    return MyStore.mainStore.getState().shoppingCart;
   }
 }

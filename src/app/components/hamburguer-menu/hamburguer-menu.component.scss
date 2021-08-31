@@ -1,0 +1,128 @@
+.hamMenu_cont {
+  min-height: 100vh;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  background-color: #000a;
+  z-index: 2000;
+  top: -100%;
+  // top: 0;
+  left: 0;
+  transition: top 0.5s ease-in-out;
+
+  .hamMenu_cont2 {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    height: auto;
+
+    .hamMenu_cont3 {
+      position: relative;
+      min-height: 100vh;
+      width: 100%;
+      height: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 70px 1fr;
+      grid-template-areas:
+        "header"
+        "LinksMenu";
+
+      .headerMenu {
+        grid-area: "header";
+        width: 100%;
+        position: relative;
+        height: 100%;
+        background-color: #3f51b5;
+        padding: 10px 16px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        & > .hamMenuClose {
+          height: 40px;
+          width: 40px;
+          background-color: #000a;
+          border-radius: 50%;
+          border: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+      }
+
+      & > .contentLinks {
+        grid-area: "contentLinks";
+        position: relative;
+        width: 100%;
+
+        .cl_continer2 {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          padding: 32px 16px;
+
+          .cl_continer3 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: space-between;
+
+            & > .link {
+              width: 100%;
+              flex-grow: 1;
+              border-top: 1px solid #fff;
+              &:not(:first-child) {
+                border-bottom: 1px solid #fff;
+              }
+
+              & > a {
+                width: 100%;
+                height: 100%;
+                text-decoration: none;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:hover {
+                  background-color: #000a;
+                  & > span {
+                    color: #f00;
+                  }
+                }
+
+                & > span {
+                  font-size: 2rem;
+                  text-transform: uppercase;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.activeMenu {
+  top: 0;
+}
+
+.hamMenuOpen {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  z-index: 1500;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+
+  mat-icon {
+    transform: scale(1.8);
+  }
+}

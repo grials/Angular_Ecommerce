@@ -1,0 +1,48 @@
+.navBar_cont {
+  width: 100%;
+  height: auto;
+  position: relative;
+
+  .navBar_cont2 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .navBar_cont3 {
+      width: 100%;
+      height: auto;
+      max-width: 1100px;
+      display: flex;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+
+      .link {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          width: 100%;
+          padding: 8px 0;
+          text-align: center;
+          text-decoration: none;
+          &:hover {
+            background-color: #aaa;
+            & > span {
+              color: #fff;
+            }
+          }
+
+          span {
+            text-transform: uppercase;
+            color: #aaa;
+          }
+        }
+      }
+    }
+  }
+}

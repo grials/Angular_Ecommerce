@@ -1,3 +1,42 @@
 <app-header></app-header>
+<div class="home_cont">
+  <div class="home_cont2">
+    <div class="home_cont3">
+      <div class="carrusel">
+        <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+          <mdb-carousel-item *ngFor="let item of language?.carruselImg">
+            <div class="view w-100">
+              <img class="d-block w-100" [src]=item.src alt="First slide">
+              <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+            </div>
+          </mdb-carousel-item>
+        </mdb-carousel>
+        <div class="publicity" *ngIf = "resizeApp?.desktop">
+          <div class="p_cont">
+            <div class="p_cont2">
+                <h1 class="title">{{language?.publicity?.title}}</h1>
+                <p class="content">{{language?.publicity?.content}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="products">
+        <div class="p_cont">
+          <div class="p_cont2">
+            <app-product
+            *ngFor="let product of language?.product"
+            [src]=product.src
+            [clickTitle]=product.clickTitle
+            [isOfert]=product.isOfert
+            [title]=product.title
+            [price]=product.price
+            [titleOfert]=language?.titleOfert
+            ></app-product>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <app-footer></app-footer>
 

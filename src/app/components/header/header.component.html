@@ -1,3 +1,4 @@
+<app-hamburguer-menu *ngIf="appResize?.movile || appResize?.tablet"></app-hamburguer-menu>
 <div class="header_cont">
   <div class="header_cont2">
     <div class="header_cont3">
@@ -9,7 +10,8 @@
           </div>
         </div>
       </div>
-      <app-nav-bar *ngIf=appResize?.desktop></app-nav-bar>
+      <app-nav-bar *ngIf="appResize?.desktop"></app-nav-bar>
     </div>
   </div>
 </div>
+<app-shopping-car></app-shopping-car>
