@@ -44,6 +44,18 @@ export const homeObject = {
           price: 19.99,
           clickTitle: 'click para ver',
           maxCant: 10,
+          description: [
+            {
+              id: 1,
+              paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nemo deserunt laboriosam reprehenderit dolore veritatis est ut quas rem exercitationem at molestiae amet nulla vero, itaque magni. Rerum, impedit.',
+            },
+            {
+              id: 2,
+              paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nemo deserunt laboriosam reprehenderit dolore veritatis est ut quas rem exercitationem at molestiae amet nulla vero, itaque magni. Rerum, impedit.',
+            },
+          ],
         },
         {
           id: 2,
@@ -53,6 +65,18 @@ export const homeObject = {
           price: 19.99,
           clickTitle: 'click para ver',
           maxCant: 10,
+          description: [
+            {
+              id: 1,
+              paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nemo deserunt laboriosam reprehenderit dolore veritatis est ut quas rem exercitationem at molestiae amet nulla vero, itaque magni. Rerum, impedit.',
+            },
+            {
+              id: 2,
+              paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nemo deserunt laboriosam reprehenderit dolore veritatis est ut quas rem exercitationem at molestiae amet nulla vero, itaque magni. Rerum, impedit.',
+            },
+          ],
         },
         {
           id: 3,
@@ -62,6 +86,18 @@ export const homeObject = {
           price: 19.99,
           clickTitle: 'click para ver',
           maxCant: 10,
+          description: [
+            {
+              id: 1,
+              paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nemo deserunt laboriosam reprehenderit dolore veritatis est ut quas rem exercitationem at molestiae amet nulla vero, itaque magni. Rerum, impedit.',
+            },
+            {
+              id: 2,
+              paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nemo deserunt laboriosam reprehenderit dolore veritatis est ut quas rem exercitationem at molestiae amet nulla vero, itaque magni. Rerum, impedit.',
+            },
+          ],
         },
         {
           id: 4,
@@ -71,6 +107,18 @@ export const homeObject = {
           price: 19.99,
           clickTitle: 'click para ver',
           maxCant: 10,
+          description: [
+            {
+              id: 1,
+              paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nemo deserunt laboriosam reprehenderit dolore veritatis est ut quas rem exercitationem at molestiae amet nulla vero, itaque magni. Rerum, impedit.',
+            },
+            {
+              id: 2,
+              paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nemo deserunt laboriosam reprehenderit dolore veritatis est ut quas rem exercitationem at molestiae amet nulla vero, itaque magni. Rerum, impedit.',
+            },
+          ],
         },
         {
           id: 5,
@@ -80,6 +128,18 @@ export const homeObject = {
           price: 19.99,
           clickTitle: 'click para ver',
           maxCant: 10,
+          description: [
+            {
+              id: 1,
+              paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nemo deserunt laboriosam reprehenderit dolore veritatis est ut quas rem exercitationem at molestiae amet nulla vero, itaque magni. Rerum, impedit.',
+            },
+            {
+              id: 2,
+              paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nemo deserunt laboriosam reprehenderit dolore veritatis est ut quas rem exercitationem at molestiae amet nulla vero, itaque magni. Rerum, impedit.',
+            },
+          ],
         },
         {
           id: 6,
@@ -89,6 +149,18 @@ export const homeObject = {
           price: 19.99,
           clickTitle: 'click para ver',
           maxCant: 10,
+          description: [
+            {
+              id: 1,
+              paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nemo deserunt laboriosam reprehenderit dolore veritatis est ut quas rem exercitationem at molestiae amet nulla vero, itaque magni. Rerum, impedit.',
+            },
+            {
+              id: 2,
+              paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nemo deserunt laboriosam reprehenderit dolore veritatis est ut quas rem exercitationem at molestiae amet nulla vero, itaque magni. Rerum, impedit.',
+            },
+          ],
         },
         {
           id: 7,
@@ -98,6 +170,18 @@ export const homeObject = {
           price: 19.99,
           clickTitle: 'click para ver',
           maxCant: 10,
+          description: [
+            {
+              id: 1,
+              paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nemo deserunt laboriosam reprehenderit dolore veritatis est ut quas rem exercitationem at molestiae amet nulla vero, itaque magni. Rerum, impedit.',
+            },
+            {
+              id: 2,
+              paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nemo deserunt laboriosam reprehenderit dolore veritatis est ut quas rem exercitationem at molestiae amet nulla vero, itaque magni. Rerum, impedit.',
+            },
+          ],
         },
         {
           id: 8,
@@ -107,6 +191,18 @@ export const homeObject = {
           price: 19.99,
           clickTitle: 'click para ver',
           maxCant: 10,
+          description: [
+            {
+              id: 1,
+              paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nemo deserunt laboriosam reprehenderit dolore veritatis est ut quas rem exercitationem at molestiae amet nulla vero, itaque magni. Rerum, impedit.',
+            },
+            {
+              id: 2,
+              paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nemo deserunt laboriosam reprehenderit dolore veritatis est ut quas rem exercitationem at molestiae amet nulla vero, itaque magni. Rerum, impedit.',
+            },
+          ],
         },
         {
           id: 9,
@@ -116,6 +212,18 @@ export const homeObject = {
           price: 19.99,
           clickTitle: 'click para ver',
           maxCant: 10,
+          description: [
+            {
+              id: 1,
+              paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nemo deserunt laboriosam reprehenderit dolore veritatis est ut quas rem exercitationem at molestiae amet nulla vero, itaque magni. Rerum, impedit.',
+            },
+            {
+              id: 2,
+              paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nemo deserunt laboriosam reprehenderit dolore veritatis est ut quas rem exercitationem at molestiae amet nulla vero, itaque magni. Rerum, impedit.',
+            },
+          ],
         },
         {
           id: 10,
@@ -125,6 +233,18 @@ export const homeObject = {
           price: 19.99,
           clickTitle: 'click para ver',
           maxCant: 10,
+          description: [
+            {
+              id: 1,
+              paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nemo deserunt laboriosam reprehenderit dolore veritatis est ut quas rem exercitationem at molestiae amet nulla vero, itaque magni. Rerum, impedit.',
+            },
+            {
+              id: 2,
+              paragraph:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nemo deserunt laboriosam reprehenderit dolore veritatis est ut quas rem exercitationem at molestiae amet nulla vero, itaque magni. Rerum, impedit.',
+            },
+          ],
         },
       ],
       titleOfert: 'En oferta',

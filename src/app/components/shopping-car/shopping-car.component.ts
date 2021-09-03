@@ -22,6 +22,5 @@ export class ShoppingCarComponent implements OnInit {
 
   closeMenu() {
     this.isActive = false;
-    console.log('close');
   }
 }

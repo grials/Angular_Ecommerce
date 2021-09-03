@@ -6,6 +6,7 @@
         <div class="p_cont">
           <div class="p_cont2">
             <app-product
+            (click)="goViewProduct(product.id)"
             *ngFor="let product of language?.products"
             [src]=product.src
             [clickTitle]=product.clickTitle

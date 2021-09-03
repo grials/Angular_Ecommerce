@@ -9,6 +9,9 @@ import { AppResizeService } from '../services/app-resize.service';
 import { HamburguerMenuComponent } from './hamburguer-menu/hamburguer-menu.component';
 import { ProductComponent } from './product/product.component';
 import { ShoppingCarComponent } from './shopping-car/shopping-car.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ConnectionService } from '../services/connection.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,9 +21,15 @@ import { ShoppingCarComponent } from './shopping-car/shopping-car.component';
     HamburguerMenuComponent,
     ProductComponent,
     ShoppingCarComponent,
+    ContactFormComponent,
   ],
-  imports: [CommonModule, RouterModule, MaterialModule],
-  providers: [AppResizeService],
-  exports: [HeaderComponent, FooterComponent, ProductComponent],
+  imports: [CommonModule, RouterModule, MaterialModule, ReactiveFormsModule],
+  providers: [AppResizeService, ConnectionService],
+  exports: [
+    HeaderComponent,
+    FooterComponent,
+    ProductComponent,
+    ContactFormComponent,
+  ],
 })
 export class ComponentsModule {}

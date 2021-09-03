@@ -1,3 +1,4 @@
+import { ConnectionService } from './services/connection.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -7,6 +8,8 @@ import { PagesModule } from './pages/pages.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppResizeService } from './services/app-resize.service';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -15,8 +18,10 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     PagesModule,
     BrowserAnimationsModule,
     MDBBootstrapModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
-  providers: [AppResizeService],
+  providers: [AppResizeService, ConnectionService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

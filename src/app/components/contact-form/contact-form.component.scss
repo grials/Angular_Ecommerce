@@ -1,0 +1,102 @@
+.contactForm {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  padding: 32px 32px;
+
+  & > .nameForm,
+  .emailForm,
+  .msgForm {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 8px 0;
+    & > label {
+      text-transform: uppercase;
+      color: rgb(243, 206, 42);
+      font-size: 1.2rem;
+      text-decoration: underline;
+    }
+
+    & > .errorContactForm {
+      font-size: 2rem;
+      background-color: #f008;
+      color: #000;
+      text-transform: uppercase;
+      padding: 8px 0 8px 8px;
+    }
+  }
+
+  & > .nameForm,
+  .emailForm {
+    & > input[type="text"],
+    input[type="email"] {
+      padding: 16px 0 16px 8px;
+      border: none;
+      outline: none;
+      border-radius: 15px;
+      color: #fff;
+      background-color: transparent;
+      &::placeholder {
+        color: rgb(192, 158, 7);
+      }
+      &:focus {
+        border: 1px solid rgb(192, 158, 7);
+      }
+    }
+  }
+
+  & > .msgForm {
+    & > textarea {
+      padding: 16px 0 16px 8px;
+      border: none;
+      outline: none;
+      border-radius: 15px;
+      color: #fff;
+      background-color: transparent;
+      height: 250px;
+      &::placeholder {
+        color: rgb(192, 158, 7);
+      }
+      &:focus {
+        border: 1px solid rgb(192, 158, 7);
+      }
+    }
+  }
+  & > .btnSubmitContactForm {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+
+    & > input[type="submit"] {
+      width: 80%;
+      padding: 16px 0;
+      background-color: rgb(243, 206, 42);
+      border: 1px solid transparent;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 2rem;
+      border-radius: 15px;
+      &:disabled {
+        background-color: rgba(243, 206, 42, 0.438);
+        color: #000;
+        border: 1px solid rgba(255, 0, 0, 0.507);
+      }
+      &:hover {
+        color: #0f0;
+      }
+    }
+  }
+}

@@ -65,9 +65,14 @@ export interface IProduct {
   title: string;
   price: number;
   clickTitle: string;
-  maxContent: number;
+  maxCant: number;
+  description: IDescription[];
 }
 
+export interface IDescription {
+  id: number;
+  paragraph: string;
+}
 export interface IPublicity {
   title: string;
   content: string;

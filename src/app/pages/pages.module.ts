@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { ViewProductComponent } from './view-product/view-product.component';
 import { StoreComponent } from './store/store.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,13 @@ import { StoreComponent } from './store/store.component';
     ViewProductComponent,
     StoreComponent,
   ],
-  imports: [CommonModule, ComponentsModule, RouterModule, MDBBootstrapModule],
+  imports: [
+    ReactiveFormsModule,
+    CommonModule,
+    ComponentsModule,
+    RouterModule,
+    MDBBootstrapModule,
+  ],
   exports: [HomeComponent, Page404Component, ThankYouComponent],
 })
 export class PagesModule {}

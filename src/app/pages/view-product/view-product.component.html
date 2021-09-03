@@ -1,5 +1,81 @@
 <app-header></app-header>
 <!-- Content Page -->
-
+<div class="viewProduct">
+  <div class="vp_cont">
+    <div class="vp_cont2">
+      <div class="header">
+        <div class="h_cont">
+          <div class="h_cont2">
+            <h1>{{language?.header?.title}}</h1>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="p_cont">
+          <div class="p_cont2">
+            <div class="presentation">
+              <div class="p_cont">
+                <div class="p_cont2">
+                  <figure>
+                    <img [src]=product?.src alt="relog">
+                  </figure>
+                  <p>{{language?.content?.caption}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="description">
+              <div class="d_cont">
+                <div class="d_cont2">
+                  <div class="header">
+                    <div class="h_cont">
+                      <div class="h_cont2">
+                        <div class="description">
+                          <h2>{{product?.title}}</h2>
+                        <h2>{{product?.price}}</h2>
+                        </div>
+                        <div class="cantProd">
+                          <label for="cant">Cantidad</label>
+                          <input type="number" [formControl]="cantProd" name="cant"  id="cant" min="0">
+                          <span class="msgError" *ngIf="maxProdError">max {{product?.maxCant}}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section">
+                    <div class="s_cont">
+                      <div class="s_cont2">
+                        <div class="btnAddCart">
+                          <button [disabled]="false">{{language?.textButton}}</button>
+                        </div>
+                        <div class="infoProduct">
+                          <div class="ip_cont">
+                            <div class="ip_cont2">
+                              <h2 class="title">{{language?.content?.title}}</h2>
+                              <p class="description" *ngFor="let item of product?.description">
+                                {{item.paragraph}}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="politics">
+                          <div class="p_cont">
+                            <div class="p_cont2">
+                              <h2 class="title">{{language?.content?.politics?.title}}</h2>
+                              <p class="description">{{language?.content?.politics?.paragraph}}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <app-footer></app-footer>
 <router-outlet></router-outlet>
